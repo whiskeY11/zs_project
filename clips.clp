@@ -263,8 +263,8 @@
 )
 
 (defrule end
-	(moja_choice E)
-	?prec10 <- (moja_choice ?x)
+	(my_choice E)
+	?prec10 <- (my_choice ?x)
 =>
 	(retract ?prec10)
 	(printout t "Program ukonceny" crlf)
